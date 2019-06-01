@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+        <title>영화관</title>
+
+        <!-- 부트스트랩 -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- 내가 만든 CSS 파일 -->
+        <link href="css/cinema.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- 퀵메뉴 -->
+        <div class="floating"> 
+            <div class="floatmenus"><a href="#top" class="floatMenu" href="#event"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><br/>Top</a><hr/></div>
+            <div class="floatmenus"><a class="floatMenu" href="ticketing.html">예매<hr/></a></div>
+            <div class="floatmenus"><a class="floatMenu" href="gangnam.html">영화관<hr/></a></div>
+            <div class="floatmenus"><a class="floatMenu" href="#target">이벤트</a></div>
+        </div>
+
+        <!-- (컨테이너)밖에 있어야 할 부분 -->
+        <div class="top-menu">
+            <!--      서비스 메뉴  -->
+            <ul class = "util">
+                <li class="topMenu">
+                    <a href="#" class="login"><span>로그인</span></a>
+                </li>
+                <li class="topMenu">
+                    <a href="#" class="costomer"><span>회원가입</span></a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <!-- 타이틀 -->
+                <a href="main.html"><img src="img/logo.png" alt="logo" style="margin-left: auto; margin-right: auto; display: block;"></a>
+
+                <!-- 네비게이션 바 -->
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="menuNames"><a href="ticketing.html">예매</a></li>
+                                <li class="menuLine">&#124;</li>
+                                <li class="menuNames"><a href="movies.html">영화</a></li>
+                                <li class="menuLine">&#124;</li>
+                                <li class="menuNames"><a href="cinema.html">영화관</a></li>
+                                <li class="menuLine">&#124;</li>
+                                <li class="menuNames"><a href="#event">이벤트</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->    
+                </nav>
+            </div>
+
+            <div class="col-xs-12 col-sm-2">
+
+                <nav class="areaList">
+                    <div class="menu-item">
+                        <h4><a href="#">서울</a></h4>
+                        <ul>
+                            <li><a href="gangnam.html">강남</a></li>
+                            <li><a href="gangdong.html">강동</a></li>
+                            <li><a href="#">강변</a></li>
+                            <li><a href="#">구로</a></li>
+                            <li><a href="#">미아</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4><a href="#">경기</a></h4>
+                        <ul>
+                            <li><a href="#">경기광주</a></li>
+                            <li><a href="guri.html">구리</a></li>
+                            <li><a href="#">김포</a></li>
+                            <li><a href="#">동탄</a></li>
+                            <li><a href="#">산본</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4><a href="#">인천</a></h4>
+                        <ul>
+                            <li><a href="#">계양</a></li>
+                            <li><a href="#">부평</a></li>
+                            <li><a href="#">인천</a></li>
+                            <li><a href="#">인천공항</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4><a href="#">강원</a></h4>
+                        <ul>
+                            <li><a href="#">강릉</a></li>
+                            <li><a href="#">원주</a></li>
+                            <li><a href="#">춘천</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4><a href="#">대전/충청</a></h4>
+                        <ul>
+                            <li><a href="#">당진</a></li>
+                            <li><a href="#">대전</a></li>
+                            <li><a href="#">천안</a></li>
+                            <li><a href="#">청주</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4><a href="#">대구</a></h4>
+                        <ul>
+                            <li><a href="#">대구</a></li>
+                            <li><a href="#">대구수성</a></li>
+                            <li><a href="#">대구스타디움</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4><a href="#">부산/울산</a></h4>
+                        <ul>
+                            <li><a href="#">동래</a></li>
+                            <li><a href="seomeon.html">서면</a></li>
+                            <li><a href="#">울산삼산</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4><a href="#">경상</a></h4>
+                        <ul>
+                            <li><a href="#">구미</a></li>
+                            <li><a href="#">김해</a></li>
+                            <li><a href="#">진주</a></li>
+                            <li><a href="#">창원</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4><a href="#">광주/전라/제주</a></h4>
+                        <ul>
+                            <li><a href="#">광주아울렛</a></li>
+                            <li><a href="#">나주</a></li>
+                            <li><a href="#">순천</a></li>
+                            <li><a href="#">제주</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+            <h3><strong>서면</strong></h3>
+
+            <div class="col-xs-12 col-sm-5">
+                <!-- 영화관 이미지 -->
+                <img src="img/seomeon.html.JPG" width="800px" height="500px">
+
+            </div>
+
+            <div class="col-xs-12 col-sm-5">
+                <!-- 영화관 위치 아이프레임  -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.28651491778!2d129.06212141489408!3d35.14947458032166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb7bc0c05ec9%3A0x65d15dd0f49d1925!2zQ0dWIOyEnOuptA!5e0!3m2!1sko!2skr!4v1513145869434" width="300" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+
+
+
+        </div>
+        <hr>
+        <h2 style="text-align:center;"><p>상영시간표</p></h2>
+
+        <!--       상영시간표 나눠서 보여줄 곳-->
+        <div class="container">
+        	<!--상영 시간표 탭 부분-->
+            <div class="tab-wrapper">
+
+                <ul class="tab-menu" align="center">
+                    <li class="active">12월 14일 (목)</li>
+                    <li>12월 15일 (금)</li>
+                    <li>12월 16일 (토)</li>
+                    <li>12월 17일 (일)</li>
+                    <li>12월 18일 (월)</li>
+                    <li>12월 19일 (화)</li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="info-movie">
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+                        <a href="lalaland.html" class="movieNa"><strong>라라랜드</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;드라마, 뮤지컬&#160;&#124;&#160;2017.12.08 재개봉&#160;&#124;&#160;127분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">07:15</a></li>
+                                <li class="mt"><a href="#">10:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">16:05</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">21:30</a></li>
+                                <li class="mt"><a href="#">25:10</a></li>   
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+                        <a href="merry.html" class="movieNa"><strong>메리와 마녀의 꽃</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;애니메이션, 모험&#160;&#124;&#160;2017.12.07 개봉&#160;&#124;&#160;103분&#160;&#124;&#160;일본&#160;&#124;&#160;전체 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">09:15</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">19:45</a></li>
+                            </ul>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="starwarz.html" class="movieNa"><strong>스타워즈: 라스트 제다이</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;액션, 모험, 판타지&#160;&#124;&#160;2017.12.14 개봉&#160;&#124;&#160;152분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">10:05</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">16:50</a></li>
+                                <li class="mt"><a href="#">17:30</a></li>
+                                <li class="mt"><a href="#">22:45</a></li>
+                                <li class="mt"><a href="#">25:15</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <!--                    2.-->
+                    <div class="info-movie">
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+
+                        <a href="merry.html" class="movieNa"><strong>메리와 마녀의 꽃</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;애니메이션, 모험&#160;&#124;&#160;2017.12.07 개봉&#160;&#124;&#160;103분&#160;&#124;&#160;일본&#160;&#124;&#160;전체 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">09:15</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">19:45</a></li>
+                            </ul>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href="lalaland.html" class="movieNa"><strong>라라랜드</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;드라마, 뮤지컬&#160;&#124;&#160;2017.12.08 재개봉&#160;&#124;&#160;127분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">07:15</a></li>
+                                <li class="mt"><a href="#">10:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">16:05</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">21:30</a></li>
+                                <li class="mt"><a href="#">25:10</a></li>   
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href="starwarz.html" class="movieNa"><strong>스타워즈: 라스트 제다이</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;액션, 모험, 판타지&#160;&#124;&#160;2017.12.14 개봉&#160;&#124;&#160;152분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">10:05</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">16:50</a></li>
+                                <li class="mt"><a href="#">17:30</a></li>
+                                <li class="mt"><a href="#">22:45</a></li>
+                                <li class="mt"><a href="#">25:15</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <!--                    3.-->
+                    <div class="info-movie">
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+                        <a href="lalaland.html" class="movieNa"><strong>라라랜드</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;드라마, 뮤지컬&#160;&#124;&#160;2017.12.08 재개봉&#160;&#124;&#160;127분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">07:15</a></li>
+                                <li class="mt"><a href="#">10:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">16:05</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">21:30</a></li>
+                                <li class="mt"><a href="#">25:10</a></li>   
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+                        <a href="merry.html" class="movieNa"><strong>메리와 마녀의 꽃</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;애니메이션, 모험&#160;&#124;&#160;2017.12.07 개봉&#160;&#124;&#160;103분&#160;&#124;&#160;일본&#160;&#124;&#160;전체 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">09:15</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">19:45</a></li>
+                            </ul>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="starwarz.html" class="movieNa"><strong>스타워즈: 라스트 제다이</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;액션, 모험, 판타지&#160;&#124;&#160;2017.12.14 개봉&#160;&#124;&#160;152분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">10:05</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">16:50</a></li>
+                                <li class="mt"><a href="#">17:30</a></li>
+                                <li class="mt"><a href="#">22:45</a></li>
+                                <li class="mt"><a href="#">25:15</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <!--                    4.-->
+
+                    <div class="info-movie">
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+
+                        <a href="merry.html" class="movieNa"><strong>메리와 마녀의 꽃</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;애니메이션, 모험&#160;&#124;&#160;2017.12.07 개봉&#160;&#124;&#160;103분&#160;&#124;&#160;일본&#160;&#124;&#160;전체 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">09:15</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">19:45</a></li>
+                            </ul>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href="lalaland.html" class="movieNa"><strong>라라랜드</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;드라마, 뮤지컬&#160;&#124;&#160;2017.12.08 재개봉&#160;&#124;&#160;127분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">07:15</a></li>
+                                <li class="mt"><a href="#">10:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">16:05</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">21:30</a></li>
+                                <li class="mt"><a href="#">25:10</a></li>   
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href="starwarz.html" class="movieNa"><strong>스타워즈: 라스트 제다이</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;액션, 모험, 판타지&#160;&#124;&#160;2017.12.14 개봉&#160;&#124;&#160;152분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">10:05</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">16:50</a></li>
+                                <li class="mt"><a href="#">17:30</a></li>
+                                <li class="mt"><a href="#">22:45</a></li>
+                                <li class="mt"><a href="#">25:15</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <!--                    5.-->
+                    <div class="info-movie">
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+                        <a href="starwarz.html" class="movieNa"><strong>스타워즈: 라스트 제다이</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;액션, 모험, 판타지&#160;&#124;&#160;2017.12.14 개봉&#160;&#124;&#160;152분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">10:05</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">16:50</a></li>
+                                <li class="mt"><a href="#">17:30</a></li>
+                                <li class="mt"><a href="#">22:45</a></li>
+                                <li class="mt"><a href="#">25:15</a></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <a href="lalaland.html" class="movieNa"><strong>라라랜드</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;드라마, 뮤지컬&#160;&#124;&#160;2017.12.08 재개봉&#160;&#124;&#160;127분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">07:15</a></li>
+                                <li class="mt"><a href="#">10:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">16:05</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">21:30</a></li>
+                                <li class="mt"><a href="#">25:10</a></li>   
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+                        <a href="merry.html" class="movieNa"><strong>메리와 마녀의 꽃</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;애니메이션, 모험&#160;&#124;&#160;2017.12.07 개봉&#160;&#124;&#160;103분&#160;&#124;&#160;일본&#160;&#124;&#160;전체 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">09:15</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">19:45</a></li>
+                            </ul>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+
+                    </div>
+
+                    <!--                    6.-->
+                    <div class="info-movie">
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+                        <a href="lalaland.html" class="movieNa"><strong>라라랜드</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;드라마, 뮤지컬&#160;&#124;&#160;2017.12.08 재개봉&#160;&#124;&#160;127분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">07:15</a></li>
+                                <li class="mt"><a href="#">10:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">16:05</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">21:30</a></li>
+                                <li class="mt"><a href="#">25:10</a></li>   
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <!--                        해당 영화 소개 페이지로 넘어가게 함-->
+                        <a href="merry.html" class="movieNa"><strong>메리와 마녀의 꽃</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;애니메이션, 모험&#160;&#124;&#160;2017.12.07 개봉&#160;&#124;&#160;103분&#160;&#124;&#160;일본&#160;&#124;&#160;전체 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">09:15</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">13:15</a></li>
+                                <li class="mt"><a href="#">18:30</a></li>
+                                <li class="mt"><a href="#">19:45</a></li>
+                            </ul>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="starwarz.html" class="movieNa"><strong>스타워즈: 라스트 제다이</strong></a>
+                        &#124;&#160;상영중&#160;&#124;&#160;액션, 모험, 판타지&#160;&#124;&#160;2017.12.14 개봉&#160;&#124;&#160;152분&#160;&#124;&#160;미국&#160;&#124;&#160;12세 관람가
+                        <br>
+                        <br>
+                        <div class="info-time">
+                            <ul class="movieTime">
+                                <!--                                시간 누르면 예매 사이트로 이동-->
+                                <li class="mt"><a href="#">10:05</a></li>
+                                <li class="mt"><a href="#">12:45</a></li>
+                                <li class="mt"><a href="#">16:50</a></li>
+                                <li class="mt"><a href="#">17:30</a></li>
+                                <li class="mt"><a href="#">22:45</a></li>
+                                <li class="mt"><a href="#">25:15</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/timetable.js"></script>
+
+    </body>
+</html>

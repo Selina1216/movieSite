@@ -1,0 +1,179 @@
+#movieSection{
+    width: inherit;
+    height: 400px;
+    overflow:auto;
+    padding: 15px;
+}
+
+/* ticketing.html의 영화 부분 */
+.movieTh{
+    /*background-color: brown;*/
+    width: 350px;
+}
+
+/* ticketing.html의 영화관 부분 */
+.cinemaTh{
+    width: 300px;
+}
+
+/* ticketing.html의 날짜와 시간 부분 */
+.timeTh{
+    width: 400px;
+}
+
+/* ticketing.html의 영화 리스트 부분 */
+#movies{
+    font-size: 15px;
+}
+
+/* 영화관 목록 (라디오버튼선택) 부분 */
+.cinemaList{
+    list-style: none;
+    line-height: 200%;
+}
+
+.selected{
+    display: none;
+}
+
+/* ticketing.html의 영화 리스트의 등급에 관한 부분 */
+.all{
+    /* 전체관람가 딱지로 li style 변경 */
+    list-style: url(../img/all.png);
+}
+
+.pg{
+    /* 청소년관람가 딱지로 li style 변경 */
+    list-style: url(../img/pg.png);
+}
+
+.adult{
+    /* 청소년관람불가 딱지로 li style 변경 */
+    list-style: url(../img/adult.png);
+}
+
+
+#cinemaDate{
+    width: 350px;
+}
+
+#selectedMovieInfo{
+    padding: 15px;
+    border: solid black 1px;
+    visibility: hidden;
+}
+
+#infoSection{
+    padding: 20px;
+    width: 850px;
+}
+
+#ticketing{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+/* fixed 메뉴 중 탑메뉴 */
+div[class="top-menu"]{
+    float: right;
+    margin-right: 200px;
+}
+
+/* 맨 상단 우측, 로그인 | 회원가입 부분 */
+li[class = "topMenu"] {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+    border-left:1px solid #999; /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */ 
+    padding:0 10px; /* 각 메뉴 간격 */
+}
+
+/* 로그인 부분 */
+li[class = "topMenu"]:first-child{
+    border-left:none;
+}
+
+ul[class = "util"] {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+/* 네비게이션 바 */
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+/* 네비게이션 바 */
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/* 영화 상세페이지 */
+#title{
+    color: firebrick;
+    font-weight: bold;
+    font-size: 20px;
+}
+#subtitle{
+    color: gray;
+}
+
+strong{
+    margin-right: 10px;
+}
+
+.thumbnail{
+    margin-right: 15px;
+}
+
+#info{
+    margin-top: 20px;
+}
+
+/* floatMenu - 오른쪽의 fixed메뉴 */ 
+.floating { 
+    position: fixed; 
+    right: 50%; 
+    top: 300px; 
+    margin-right: -720px; 
+    text-align:center; 
+    width: 100px; 
+    font-size: 15px; 
+    z-index: 1; 
+    line-height: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px; 
+    background: white; 
+    box-shadow: 5px 5px 20px lightgray;
+}
+
+/* floatMenu - margin */
+.floatmenus {
+    margin: 25px;
+    font-weight: 100px;
+}
+
+.floatMenu {
+    color: dimgray;
+}
+
+/* 네비게이션 바 - 예매, 영화, 영화관, 이벤트*/
+li[class="menuNames"] {
+    font-weight: bold;
+    font-size: 15px;
+    color: gray;
+}
+
+/* 네비게이션 바 - 가운데 | 표시 */
+li[class="menuLine"] {
+    font-size: 20px;
+    color: lightgray;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 10px;
+}

@@ -1,0 +1,369 @@
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+div[class="top-menu"]{
+    float: right;
+    margin-right: 200px;
+}
+
+
+li[class = "topMenu"] {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+    border-left:1px solid #999; /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */ 
+    padding:0 10px; /* 각 메뉴 간격 */
+}
+
+li[class = "topMenu"]:first-child{border-left:none;}
+
+
+ul[class = "util"] {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+li[class="eventImg"] {
+    display:inline;
+}
+
+/* 네비게이션 바 - 예매, 영화, 영화관, 이벤트*/
+li[class="menuNames"] {
+    font-weight: bold;
+    font-size: 15px;
+    color: gray;
+}
+
+/* 네비게이션 바 - 가운데 | 표시 */
+li[class="menuLine"] {
+    font-size: 20px;
+    color: lightgray;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 10px;
+}
+
+/*영화관 지역 세로 네비게이션바*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav[class="areaList"] {
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 50px auto;
+    width: 200px;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-item {
+    background: #fff;
+    width: 200px; 
+}
+
+/*Menu Header Styles*/
+.menu-item h4 {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 12px;
+
+    /*Gradient*/
+    background: #a90329; /* Old browsers */
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+    background: linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+
+.menu-item h4:hover {  
+    background: #cc002c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cc002c 0%, #6d0019 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc002c), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* IE10+ */
+    background: linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc002c', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+}
+
+.menu-item h4 a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    width: 200px;
+}
+
+/*ul Styles*/
+.menu-item ul {
+    background: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    height: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+
+    /*Animation*/
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+}
+
+
+.menu-item:hover ul {
+    height: 93px;
+
+}
+
+.menu-item ul a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #aaa;
+    display: block;
+    width: 200px;
+}
+
+/*li Styles*/
+.menu-item li {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item li:hover {
+    background: #eee;
+}
+
+/*First Item Styles*/
+.alpha p {
+    padding: 8px 12px;
+    color: #aaa;
+}
+
+.alpha p a {
+    color: #aaa;
+    font-style: italic;
+}
+
+.alpha p a:hover {
+    color: #ccc;
+}
+
+/*여기까지 영화관 지역 세로 네비게이션바*/
+
+/*영화관 - 상영시간표 hr줄*/
+hr[class="timeTable"] {
+    color:black;
+    border: solid;
+}
+
+ul[class="table"] {
+    width: 800px;
+    height: 40px;
+}
+/*리스트 모양 보이지 않게*/
+li[class="on"] {
+    list-style: none;
+}
+
+/*영화관 - 상영시간표 영화 상영 리스트 관련*/
+.tab-wrapper {
+    margin: 40px auto;
+    width: 77%;
+    max-width:1000px;
+}
+
+.tab-menu li {
+    position:relative;
+    background-color: #fff;
+    color:#bcbcbc;
+    display: inline-block;
+    padding: 20px 20px;
+    opacity: 0.8;
+    cursor:pointer;
+    z-index:0;
+}
+
+.tab-menu li:hover {
+    color:#464646;
+}
+
+.tab-menu li.active {
+    color:#464646;
+    opacity: 1;
+}
+
+.tab-menu li.active:hover {
+    color:#464646;
+}
+
+.tab-content>div {
+    background-color: #fff;
+    box-sizing:border-box;
+    width: 100%;
+    padding: 50px;   
+    min-height:200px;
+}
+
+.line {
+    position:absolute;
+    width: 0;
+    height: 7px;
+    background-color: crimson;
+    top: 0;
+    left: 0;
+}
+a[class="movieNa"] {
+    font-size: 20px;
+}
+ul[class="movieTime"] {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+li[class="mt"] {
+    display:inline;
+    width: 80px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding:3px;
+    font-size: 15px;
+    font-style: oblique;
+}
+
+/* #floatMenu */ 
+.floating { 
+    position: fixed; 
+    right: 50%; 
+    top: 300px; 
+    margin-right: -720px; 
+    text-align:center; 
+    width: 100px; 
+    font-size: 15px; 
+    z-index: 1; 
+    line-height: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px; 
+    background: white; 
+    box-shadow: 5px 5px 20px lightgray;
+}
+
+.floatmenus {
+    margin: 25px;
+    font-weight: 100px;
+}
+
+.floatMenu {
+    color: dimgray;
+}
+
+/*실시간*/
+body {
+    font-size: 12px;
+    background: #FFF;
+    color: #333;
+    margin: 0;
+}
+
+#content {
+    margin: 20px;
+    padding: 10px;
+    background: firebrick;
+}
+
+#rank-list a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#rank-list a:hover {
+    text-decoration: underline;
+}
+
+#rank-list {
+    overflow: hidden;
+    width: 200px;
+    height: 20px;
+    margin: 0;
+}
+
+#rank-list dt {
+    display: none;
+}
+
+#rank-list dd {
+    position: relative;
+    margin: 0;
+}
+
+#rank-list ol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#rank-list li {
+    height: 20px;
+    line-height: 20px;
+}
+
+/* 유투브 영상과 메인 네비게이션 거리를 벌리기 위함 */
+iframe{
+    margin-top: 35px;
+}
+
+/*현재상영순위 제목 */
+h3[class="movie-rank"] {
+    margin: 20px;
+    text-align: center;
+
+}
+
+/*상영예정 글씨*/
+h3[id="yejung"] {
+    margin: 20px;
+    text-align: center;
+
+}
+
+div[class="comingSoon"] {
+    margin: 30px;
+}
+
+/*상영예정작 슬라이더 */
+
+.album-wrap {position:relative; width:300px; height:400px; margin:0 auto; overflow:hidden;}
+.album-wrap ul.album {position:absolute;}
+.album-wrap ul.album li {float:left; width:300px;}
+
+ul.bt-roll {width:110px; margin:0 auto; margin-top:20px; margin-left: 130px;}
+ul.bt-roll li {float:left; margin-right:5px; list-style: none; }
+li[class="nowMovie"] {
+    list-style: none;
+    list-style: none;
+}

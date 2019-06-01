@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+        <title>회원가입</title>
+
+        <!-- 부트스트랩 -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+
+        <style>
+            div.row div {
+                text-align: center
+            }
+            *{font-family:"바른나눔고딕", "맑은 고딕", "돋움";}
+            h1{font-size:17px; color:firebrick; font-weight: bold;}
+            ul{list-style: none;}
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+        
+        <form method="post" action="joinFinish.html">
+
+        <fieldset>
+            <legend><h1>필수 입력 사항</h1></legend>
+        <ul><!--1-->
+            <li><!--2-->
+                계정ID:
+                <input type="text" name="id" pattern="[A-Za-z0-9]{1,6}" placeholder="6자 이내, 영문+숫자"
+                       autofocus required/>
+            </li>
+            <li>비밀번호 :
+                <input type="password" name="pw" pattern="[0-9]{4,8}" placeholder="최대 4자~8자" required/>
+            </li>
+            <li>휴대전화 :
+                <input type="tel" name="telph" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required/></li>
+            <li>전자우편 :
+            <input type="email" name="email" required/></li></ul>
+            </fieldset>
+            
+            <fieldset>
+            <legend><h1>추가 입력 사항</h1></legend>
+        <ul>
+            <li>
+                직업 
+                <select><!--3-->
+        <option value="초기값">선택하세요</option>
+        <option value="회사원">회사원</option>
+        <option value="학생">학생</option>
+        <option value="주부">주부</option>
+        <option value="공무원">공무원</option>
+        <option value="기타">기타</option>
+                </select><br><br>
+            </li>
+            <li>가입경로<!--5--><br>
+                <label><input type="radio" name="join"/>
+                              드림시네마 웹사이트</label>
+                
+                <label><input type="radio" name="join"/>
+                              드림시네마 어플</label>
+                
+                <label><input type="radio" name="join"/>
+                    기타</label></li><br>
+            <li>선호하는 장르<!--6--><br>
+                <label>
+                    <input type="checkbox" name="hobby"/>공포</label>
+                <label>
+                    <input type="checkbox" name="hobby"/>스릴러</label>
+                <label>
+                    <input type="checkbox" name="hobby"/>SF</label>
+                <label>
+                    <input type="checkbox" name="hobby"/>로맨스</label>
+                <label>
+                    <input type="checkbox" name="hobby"/>기타</label></li><br>
+            <li>프로필 사진 등록 <!--7-->
+            <input type="file" accept=".jpg"></li><br>
+            <li>자기소개<!--8-->
+                <br>
+            <textarea rows="5" cols="50"> 한 줄 소개를 작성해주세요!
+                      </textarea></li></ul>
+             </fieldset>
+            <!--9-->
+             <input type="submit" value="가입하기">
+            
+        </form>
+
+                    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+                    <script src="js/bootstrap.min.js"></script>
+
+                    </body>
+                    </html>

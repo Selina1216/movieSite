@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- 
+     해당 페이지는 w3school의 hover, 이미지 오버레이에 대한 부분을 참고하여 작성했습니다.
+     (참고한 곳의 링크: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity)
+     movies.html페이지는 오버레이 효과를 주어 영화에 대한 상세 정보 및 예매 페이지로 이동할 수 있게 합니다.
+-->
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+        <title>드림시네마</title>
+
+        <!-- 부트스트랩 -->
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <!-- 내가 만든 CSS 파일 -->
+        <link href="css/main.css" rel="stylesheet"/>
+        <link href="css/moviepage.css" rel="stylesheet"/>
+        <script src="./js/movieInfos.js"></script>
+    </head>
+
+    <body onload="showPoster()">
+        <!-- 퀵메뉴 -->
+        <div class="floating"> 
+            <div class="floatmenus"><a href="#top" class="floatMenu" href="#event"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><br/>Top</a><hr/></div>
+            <div class="floatmenus"><a class="floatMenu" href="ticketing.html">예매<hr/></a></div>
+            <div class="floatmenus"><a class="floatMenu" href="gangnam.html">영화관<hr/></a></div>
+            <div class="floatmenus"><a class="floatMenu" href="#target">이벤트</a></div>
+        </div>
+
+        <!-- (컨테이너)밖에 있어야 할 부분 -->
+        <div class="top-menu" id="top">
+            <!-- 서비스 메뉴  -->
+            <ul class = "util">
+                <li class="topMenu">
+                    <a href="login.html" class="login"><span>로그인</span></a>
+                </li>
+                <li class="topMenu">
+                    <a href="join.html" class="costomer"><span>회원가입</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <!-- 타이틀 -->
+                <a href="main.html"><img src="img/logo.png" alt="logo" style="margin-left: auto; margin-right: auto; display: block;"></a>
+
+                <!-- 네비게이션 바 -->
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="menuNames"><a href="ticketing.html">예매</a></li>
+                                <li class="menuLine">&#124;</li>
+                                <li class="menuNames"><a href="movieDetail.html">영화</a></li>
+                                <li class="menuLine">&#124;</li>
+                                <li class="menuNames"><a href="gangnam.html">영화관</a></li>
+                                <li class="menuLine">&#124;</li>
+                                <li class="menuNames"><a href="#event">이벤트</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->    
+                </nav>
+            </div>
+        </div>
+
+        <!-- 영화 포스터 -->
+        <div class="bigContainer">
+            <br/>
+
+            <div id="section2">
+                <table>
+                    <tr id="movieSection1">
+                        <!--여기부터가 한세트-->
+                    </tr>
+                    <tr id="movieSection2">
+                        <!--여기부터가 한세트-->
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/silsigan.js"></script>
+        <script src="js/jquery.dimensions.js" type="text/javascript"></script>
+
+    </body>
+    <footer>
+        <hr>
+        <div class="container" style="text-align: center" id="footer1">
+            회사소개 &#124;
+            IR &#124;
+            채용정보 &#124;
+            광고/프로모션문의 &#124;
+            제휴문의 &#124;
+            출점문의 &#124;
+            이용약관 &#124;
+            편성기준 &#124;
+            개인정보처리방침 &#124;
+            법적고지 &#124;
+            이메일주소무단수집거부 &#124;
+            상생경영 &#124;
+            사이트맵
+        </div><br>
+        <div class="container"  id="footer2">
+            <img src="img/logo.png" width="250px" align="left">
+            <br>(01797) 서울특별시 노원구 화랑로 621 드림시네마<br>
+            <strong>대표이사</strong> 조미림 최서진 윤희림 <br>
+            <strong>TEL</strong> 02-970-5114 ㅣ <strong>FAX</strong> 02-970-5114<br>
+            <div><img src="img/sns.png" align="right" width="150px">
+                &#169;2017 Dream Cinema. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</html>
